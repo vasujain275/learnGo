@@ -15,6 +15,11 @@ func main() {
 
 	// comma ok || err err syntax
 
-	input, _ := reader.ReadString('\n')
+	input, err := reader.ReadString('\n')
+
+	if err != nil {
+		fmt.Println(err)
+	}
+
 	fmt.Println("Thanks for rating,", input)
 }

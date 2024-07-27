@@ -1,3 +1,3 @@
-module userInput
+module UserInput
 
 go 1.22.5
