@@ -10,6 +10,9 @@ import "fmt"
 // float64: a floating-point number
 // byte: exactly what it sounds like: 8 bits of data
 
+// Public variable
+var LoginToken = "This is a Public Token because it starts with Captial Letter"
+
 func main() {
 	// Normal Way of Variable Declaration
 	var smsSendingLimit int
@@ -24,7 +27,11 @@ func main() {
 	// \n  - newline
 
 	// Shorthand way to declare variables
-	empty := ""
+	// empty := ""
 	// Same as var empty string
 	// := can't be used outside any function i.e. global scope
+
+	// To find the Type of a Variable
+	fmt.Printf("Type of username is: %T", username)
+	fmt.Println(LoginToken) // Can be used here as it is also a global var
 }
